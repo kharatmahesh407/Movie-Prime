@@ -1,0 +1,405 @@
+.premium-hero {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: background-image 0.7s ease;
+}
+
+.premium-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.75) 35%,
+      rgba(0, 0, 0, 0.25) 75%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    linear-gradient(
+      0deg,
+      #080808 0%,
+      transparent 35%
+    );
+}
+
+.premium-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 80px 7%;
+}
+
+.premium-hero-label {
+  color: #e50914;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.premium-hero h1 {
+  margin: 15px 0;
+  color: white;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+.premium-hero-meta {
+  display: flex;
+  gap: 18px;
+  color: #ddd;
+  font-size: 15px;
+}
+
+.premium-hero-content p {
+  color: #ccc;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 22px 0 30px;
+}
+
+.premium-hero-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.premium-hero-buttons button {
+  border: none;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.hero-watch-btn {
+  background: white;
+  color: black;
+}
+
+.hero-watch-btn:hover {
+  background: #e50914;
+  color: white;
+  transform: scale(1.05);
+}
+
+.hero-list-btn {
+  color: white;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+}
+
+.hero-list-btn:hover {
+  background: rgba(255,255,255,0.22);
+  transform: scale(1.05);
+}
+
+.premium-hero-dots {
+  position: absolute;
+  z-index: 3;
+  bottom: 30px;
+  left: 7%;
+  display: flex;
+  gap: 8px;
+}
+
+.premium-hero-dots button {
+  width: 25px;
+  height: 4px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.35);
+  cursor: pointer;
+}
+
+.premium-hero-dots button.active {
+  width: 45px;
+  background: white;
+}
+
+@media (max-width: 700px) {
+  .premium-hero {
+    min-height: 600px;
+    align-items: flex-end;
+  }
+
+  .premium-hero-content {
+    padding: 50px 6%;
+  }
+
+  .premium-hero h1 {
+    font-size: 50px;
+  }
+
+  .premium-hero-content p {
+    font-size: 14px;
+  }
+}
+
+/* =========================================
+   KIDS HERO
+========================================= */
+
+.kids-hero {
+  min-height: 650px;
+
+  background-position: center;
+  background-size: cover;
+
+  border-bottom: 4px solid rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================
+   KIDS OVERLAY
+========================================= */
+
+.kids-hero .premium-hero-overlay {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 20, 50, 0.92) 0%,
+      rgba(20, 30, 70, 0.68) 38%,
+      rgba(20, 30, 70, 0.18) 75%,
+      rgba(0, 0, 0, 0.45) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(8, 10, 30, 0.85) 0%,
+      transparent 45%
+    );
+}
+
+
+/* =========================================
+   KIDS CONTENT
+========================================= */
+
+.kids-hero .premium-hero-content {
+  max-width: 650px;
+}
+
+
+/* =========================================
+   KIDS LABEL
+========================================= */
+
+.kids-hero .premium-hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #fff;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.16);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(10px);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================
+   KIDS TITLE
+========================================= */
+
+.kids-hero h1 {
+  font-size: clamp(48px, 7vw, 86px);
+
+  line-height: 0.95;
+
+  margin: 18px 0;
+
+  color: white;
+
+  text-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   KIDS META
+========================================= */
+
+.kids-hero .premium-hero-meta {
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+
+.kids-hero .premium-hero-meta span {
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.14);
+
+  color: white;
+
+  font-size: 13px;
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* =========================================
+   KIDS DESCRIPTION
+========================================= */
+
+.kids-hero .premium-hero-content p {
+  max-width: 560px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   KIDS WATCH BUTTON
+========================================= */
+
+.kids-hero .hero-watch-btn {
+  background: white;
+
+  color: #111;
+
+  border-radius: 999px;
+
+  padding: 14px 28px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.kids-hero .hero-watch-btn:hover {
+  background: #111;
+
+  color: white;
+
+  transform: translateY(-2px) scale(1.03);
+}
+
+
+/* =========================================
+   KIDS MY LIST BUTTON
+========================================= */
+
+.kids-hero .hero-list-btn {
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.16);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(10px);
+}
+
+
+.kids-hero .hero-list-btn:hover {
+  background: rgba(255, 255, 255, 0.28);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   KIDS SLIDER DOTS
+========================================= */
+
+.kids-hero .premium-hero-dots {
+  bottom: 28px;
+}
+
+
+.kids-hero .premium-hero-dots button {
+  height: 6px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.4);
+
+  transition:
+    width 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.kids-hero .premium-hero-dots button.active {
+  width: 48px;
+
+  background: white;
+}
+
+
+/* =========================================
+   MOBILE KIDS HERO
+========================================= */
+
+@media (max-width: 700px) {
+
+  .kids-hero {
+    min-height: 600px;
+
+    align-items: flex-end;
+  }
+
+
+  .kids-hero .premium-hero-content {
+    padding: 45px 6% 65px;
+  }
+
+
+  .kids-hero h1 {
+    font-size: 48px;
+
+    line-height: 1;
+  }
+
+
+  .kids-hero .premium-hero-content p {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 16px 0 24px;
+  }
+
+
+  .kids-hero .premium-hero-buttons {
+    flex-wrap: wrap;
+  }
+
+
+  .kids-hero .hero-watch-btn,
+  .kids-hero .hero-list-btn {
+    padding: 12px 20px;
+  }
+
+
+  .kids-hero .premium-hero-dots {
+    left: 6%;
+
+    bottom: 25px;
+  }
+
+}
